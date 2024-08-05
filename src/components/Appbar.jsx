@@ -35,52 +35,24 @@ function ResponsiveAppBar() {
 
   return (
     <>
-  <AppBar
-    position="static"
-    sx={{
-      backgroundColor: '#008080',
-      width: '100%',
-      borderBottom: '2px solid #000',
-      zIndex: (theme) => theme.zIndex.drawer + 1,
-    }}
-  >
-    <Container maxWidth={false} sx={{ paddingLeft: 0, paddingRight: 0 }}>
-      <Toolbar disableGutters sx={{ textAlign: 'left', paddingLeft: 0 }}>
-        <Typography
-          variant="h6"
-          noWrap
-          component="a"
-          sx={{
-            mr: 2,
-            display: { xs: 'none', md: 'flex' },
-            fontFamily: 'Arial',
-            fontWeight: 700,
-            letterSpacing: '.1rem',
-            color: 'inherit',
-            textDecoration: 'none',
-          }}
-        >
-          Justin Yamamoto
-        </Typography>
-
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, alignItems: 'center' }}>
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-          >
-            {/* Icon can be added here */}
-          </IconButton>
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: '#008080',
+        width: '100%',
+        borderBottom: '2px solid #000',
+        zIndex: (theme) => theme.zIndex.drawer + 1,
+      }}
+    >
+      <Container maxWidth={false} sx={{ paddingLeft: 0, paddingRight: 0 }}>
+        <Toolbar disableGutters sx={{ textAlign: 'left', paddingLeft: 0 }}>
           <Typography
             variant="h6"
             noWrap
             component="a"
             sx={{
-              flexGrow: 1,
-              display: { xs: 'flex', md: 'none' },
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
               fontFamily: 'Arial',
               fontWeight: 700,
               letterSpacing: '.1rem',
@@ -90,71 +62,76 @@ function ResponsiveAppBar() {
           >
             Justin Yamamoto
           </Typography>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left',
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: 'block', md: 'none' },
-            }}
-          >
-            {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
-            ))}
-          </Menu>
-        </Box>
-
-        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-start' }}>
-          {pages.map((page) => (
-            <Button
-              key={page}
-              onClick={() => navigate(`/${page.toLowerCase()}`)}
-              sx={{ my: 2, color: 'white', display: 'block' }}
+  
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, alignItems: 'center' }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
             >
-              {page}
-            </Button>
-          ))}
-        </Box>
+            </IconButton>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              sx={{
+                flexGrow: 1,
+                display: { xs: 'flex', md: 'none' },
+                fontFamily: 'Arial',
+                fontWeight: 700,
+                letterSpacing: '.1rem',
+                color: 'inherit',
+                textDecoration: 'none',
+              }}
+            >
+              Justin Yamamoto
+            </Typography>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={() => navigate(`/${page.toLowerCase()}`)}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+  
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-start' }}>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={() => navigate(`/${page.toLowerCase()}`)}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
 
-        <Box sx={{ flexGrow: 0 }}>
-          <Tooltip title="Open settings">
-            {/* Icon can be added here */}
-          </Tooltip>
-          <Menu
-            sx={{ mt: '45px' }}
-            id="menu-appbar"
-            anchorEl={anchorElUser}
-            anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorElUser)}
-            onClose={handleCloseUserMenu}
-          >
-            {/* Menu items can be added here */}
-          </Menu>
-        </Box>
-      </Toolbar>
-    </Container>
-  </AppBar>
-</>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  </>
+  
 
 
   );
