@@ -106,7 +106,7 @@ export const About = () =>{
         </Box>
 
         <Box sx={{ marginLeft: {xs: '40%', m: '15%', lg: '10%', xl: '10%'}, position: 'relative', display: 'flex', alignItems: 'center'}}>
-          <Box sx={{ position: 'absolute', top: '0.1px' }}>
+          <Box sx={{ position: 'absolute', top: '0.1px', display: { xs: 'none', sm: 'block' } }}>
             <Avatar sx={{ width: 400, height: 400 }} alt="Justin Yamamoto" src="https://firebasestorage.googleapis.com/v0/b/react-valorant.appspot.com/o/other%2FIMG_7183.jpg?alt=media&token=2ecd44fc-5861-40d1-a715-80deebeb7323" />
           </Box>          
         </Box>
