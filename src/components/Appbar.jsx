@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
           Justin Yamamoto
         </Typography>
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, alignItems: 'center' }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -74,6 +74,22 @@ function ResponsiveAppBar() {
           >
             {/* Icon can be added here */}
           </IconButton>
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'flex', md: 'none' },
+              fontFamily: 'Arial',
+              fontWeight: 700,
+              letterSpacing: '.1rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Justin Yamamoto
+          </Typography>
           <Menu
             id="menu-appbar"
             anchorEl={anchorElNav}
