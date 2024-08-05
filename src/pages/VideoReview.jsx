@@ -88,7 +88,7 @@ export const VideoReview = () => {
         sx={{
           alignItems: 'center',
           display: 'flex',
-          flexDirection: 'row'
+          flexDirection: { xs: 'column', md: 'row' },
         }}
       >
         <Box
