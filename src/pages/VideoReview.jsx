@@ -143,8 +143,7 @@ export const VideoReview = () => {
           </Box>
         </Box>
 
-        <Carousel sx={{marginLeft: '20px', marginTop: '50px', marginRight: '20px', border: '1px solid black', width: 900, height: 450, borderRadius: '20px'}}>
-            {
+        <Carousel sx={{marginLeft: '20px', marginTop: '50px', marginRight: '20px', border: '1px solid black', width: {xs: 450, m: 600, lg: 900, xl: 900}, height: {xs: 250, m: 300, lg: 450, xl: 450}, borderRadius: '20px'}}>            {
                 itemData.map( (item, i) => <Item key={i} item={item} /> )
             }
         </Carousel>
