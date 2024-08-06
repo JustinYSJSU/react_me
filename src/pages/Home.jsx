@@ -69,7 +69,7 @@ export const Home = () => {
           boxSizing: 'border-box',
         }}
       >
-        <Typography variant="h3" sx={{ marginLeft: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '30px' }}>
+        <Typography variant="h3" sx={{ marginLeft: '20px', marginTop: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '30px' }}>
           My Skills
         </Typography>
 
