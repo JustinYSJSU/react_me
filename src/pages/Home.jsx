@@ -32,7 +32,7 @@ export const Home = () => {
             overflow: 'auto',
           }}
         >
-          <Typography variant="h2" sx={{ marginLeft: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '35px' }}>
+          <Typography variant="h2" sx={{ marginLeft: '20px', marginTop: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '35px' }}>
             Hi, I'm Justin Yamamoto
           </Typography>
 
