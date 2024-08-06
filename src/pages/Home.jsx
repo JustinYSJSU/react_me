@@ -30,23 +30,22 @@ export const Home = () => {
             alignItems: 'flex-start',
             width: { xs: '100%', md: '50%', lg: '50%', xl: '50%' },
             overflow: 'auto',
-            padding: '20px',
           }}
         >
-          <Typography variant="h2" sx={{ textAlign: 'left', fontWeight: 'bold', fontSize: '35px' }}>
+          <Typography variant="h2" sx={{ marginLeft: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '35px' }}>
             Hi, I'm Justin Yamamoto
           </Typography>
 
-          <Typography variant="h4" sx={{ marginTop: '10px', textAlign: 'left', fontSize: '18px' }}>
+          <Typography variant="h4" sx={{ marginLeft: '20px', marginTop: '10px', textAlign: 'left', fontSize: '18px' }}>
             Cum Laude Software Engineering Graduate from San Jose State University.
           </Typography>
 
           <Box sx={{ flexDirection: 'column' }}>
-            <Typography variant="h3" sx={{ marginTop: '20px', fontWeight: 'bold', textAlign: 'left', fontSize: '30px' }}>
+            <Typography variant="h3" sx={{ marginLeft: '20px', marginTop: '20px', fontWeight: 'bold', textAlign: 'left', fontSize: '30px' }}>
               About Me
             </Typography>
 
-            <Typography variant="h4" sx={{ marginTop: '10px', textAlign: 'left', fontSize: '18px' }}>
+            <Typography variant="h4" sx={{ marginLeft: '20px', marginTop: '10px', textAlign: 'left', fontSize: '18px' }}>
               I am a recent graduate from San Jose State University. I graduated with a Bachelor of Science in Software Engineering and earned
               the Cum Laude honors distinction (3.67 Cumulative GPA).
               Read more about me <Link sx={{ textAlign: 'left' }} href="/about"> here. </Link>
