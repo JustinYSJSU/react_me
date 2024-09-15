@@ -67,7 +67,7 @@ export const Home = () => {
           alignItems: 'flex-start',
           width: { xs: '100%', md: '50%' },
           boxSizing: 'border-box',
-          marginTop: {xs: '70%', md: 'auto'}
+          marginTop: {xs: '80%', md: 'auto'}
         }}
       >
         <Typography variant="h3" sx={{ marginLeft: '20px', marginTop: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '30px' }}>
