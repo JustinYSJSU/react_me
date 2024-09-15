@@ -53,7 +53,7 @@ export const Home = () => {
           </Box>
         </Box>
 
-        <Box sx={{ marginLeft: '10%', position: 'relative', display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ marginLeft: '10%', position: 'relative', display: 'flex', alignItems: 'center', flexDirection: { xs: 'column', md: 'row' } }}>
           <Box sx={{ position: 'absolute', top: '0.1px' }}>
             <Avatar sx={{ width: 350, height: 350 }} alt="Justin Yamamoto" src="https://firebasestorage.googleapis.com/v0/b/react-valorant.appspot.com/o/other%2FIMG_0082.jpg?alt=media&token=2b1550a2-9206-4b59-a9a9-a3f2fc8fd902" />
           </Box>
@@ -67,6 +67,7 @@ export const Home = () => {
           alignItems: 'flex-start',
           width: { xs: '100%', md: '50%' },
           boxSizing: 'border-box',
+          marginTop: {xs: '70%', md: 'auto'}
         }}
       >
         <Typography variant="h3" sx={{ marginLeft: '20px', marginTop: '20px', textAlign: 'left', fontWeight: 'bold', fontSize: '30px' }}>

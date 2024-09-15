@@ -59,7 +59,7 @@ function ResponsiveAppBar() {
             letterSpacing: '.1rem',
             color: 'inherit',
             textDecoration: 'none',
-            cursor: 'pointer',  // Add cursor pointer for better UX
+            cursor: 'pointer', 
           }}
         >
           Justin Yamamoto
@@ -75,6 +75,7 @@ function ResponsiveAppBar() {
             color="inherit"
           >
           </IconButton>
+          
           <Typography
             variant="h6"
             noWrap
@@ -93,6 +94,7 @@ function ResponsiveAppBar() {
           >
             Justin Yamamoto
           </Typography>
+
           <Menu
             id="menu-appbar"
             anchorEl={anchorElNav}
